@@ -7,27 +7,29 @@ body{
 
     margin: 0 auto;
     padding: 0 2em;
-    background-color: red;
 }
 
 .slide_cont_all{
 
-    width: 50.75em;
-    height: 35.25em;
-    overflow: hidden;
+    border: 0.5em solid rgba(191, 117, 226, 0.19);
     border-radius: 0.5em;
+    width: 50.75em;
+    height: 37em;
+    overflow: hidden;
     text-align: center;
     margin: 0.5em auto;
 }
 
 
 
-.sliders > img{
+.sliders img{
+    height: 100%;
     width: 100%;
 }
 
 .navigation{
 
+    margin-right: 10em;
     justify-content: end;
     display: flex;
 }
@@ -36,7 +38,7 @@ body{
 
     width: 1.5em;
     height: 0.5em;
-    margin: 6px;
+    margin: 0.8em;
     cursor: pointer;
     background-color: #ddd;
     opacity: .6;
@@ -59,7 +61,7 @@ body{
 
 input[name = "slides"]{
 
-    display: NONE;
+    display: none;
 }
 
 .contain_slid{
@@ -67,10 +69,107 @@ input[name = "slides"]{
     width: 400%;
     height: 100%;
     display: flex;
+
 }
 
 .sliders{
 
-    width: 25%
-   
+    opacity: 1;
+    width: 25%;
+    transition: all .4s ease-in-out;
 }
+
+.cont_text{
+
+    overflow: hidden;
+    width: 10em; 
+    height: 4em;
+    text-align: center;
+    color: blueviolet;
+    margin-left: 10em;
+    margin-top: 2.5em;
+} 
+
+
+.textslide{
+
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.text_slide{
+
+    opacity: 1;
+    font-size: 2em;
+    color: rgb(132, 48, 135);
+}
+
+
+
+
+
+
+
+
+
+
+#slide1:checked ~ .slide1{
+
+    opacity: 1;
+    margin-left: 0;
+}
+#slide2:checked ~ .slide2{
+
+    opacity: 1;
+    margin-left: -25%;
+}
+#slide3:checked ~ .slide3{
+    opacity: 1;
+    margin-left: -50%;
+}
+#slide4:checked ~ .slide4{
+    opacity: 1;
+    margin-left: -75%;
+}
+
+#slide2:checked ~ .slide1{
+
+    opacity: 0;
+    
+}
+#slide3:checked ~ .slide1{
+
+    opacity: 0;
+    
+}
+#slide4:checked ~ .slide1{
+
+    opacity: 0;
+    
+}
+
+
+
+
+
+
+#slide1:checked ~ .sl_text1{
+
+    opacity: 1;
+    margin-left: 0;
+}
+#slide2:checked ~ .sl_text{
+
+    opacity: 1;
+    margin-left: -25%;
+} 
+/* #slide3:checked ~ .sl_text3{
+    opacity: 1;
+    margin-left: -50%;
+}
+#slide4:checked ~ .sl_text4{
+    opacity: 1;
+    margin-left: -75%;
+} */
+  
