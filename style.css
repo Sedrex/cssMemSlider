@@ -1,0 +1,10 @@
+body{
+
+    background-color: rgb(32, 31, 31);
+}
+
+.container{
+
+    padding: 0 2em;
+    background-color: red;
+}
