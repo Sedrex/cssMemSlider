@@ -1,10 +1,76 @@
 body{
-
+    
     background-color: rgb(32, 31, 31);
 }
 
 .container{
 
+    margin: 0 auto;
     padding: 0 2em;
     background-color: red;
+}
+
+.slide_cont_all{
+
+    width: 50.75em;
+    height: 35.25em;
+    overflow: hidden;
+    border-radius: 0.5em;
+    text-align: center;
+    margin: 0.5em auto;
+}
+
+
+
+.sliders > img{
+    width: 100%;
+}
+
+.navigation{
+
+    justify-content: end;
+    display: flex;
+}
+
+.bar{
+
+    width: 1.5em;
+    height: 0.5em;
+    margin: 6px;
+    cursor: pointer;
+    background-color: #ddd;
+    opacity: .6;
+    border-radius: 0.7em;
+    transition: all .3s ease-in-out;
+}
+
+.bar:active{
+
+    opacity: .9;
+    transform: scale(1.1);
+}
+
+.bar:hover{
+
+    opacity: .9;
+    transform: scale(1.1);
+    background-color: rgb(199, 199, 199);
+}
+
+input[name = "slides"]{
+
+    display: NONE;
+}
+
+.contain_slid{
+
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.sliders{
+
+    width: 25%
+   
 }
